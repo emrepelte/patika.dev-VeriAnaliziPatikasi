@@ -13,6 +13,6 @@ where rental_rate = (select max(rental_rate) from film);
 SELECT * 
 FROM film 
 WHERE rental_rate = (SELECT MIN(rental_rate) FROM film) 
-AND replacement_cost = (SELECT MIN(replacement_cost) FROM film);
+AND replacement_cost = (SELECT MIN(replacement_cost) FROM film) order by;
 
 ## 4) payment tablosunda en fazla sayıda alışveriş yapan müşterileri(customer) sıralayınız.
